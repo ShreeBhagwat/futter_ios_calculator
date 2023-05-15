@@ -1,0 +1,22 @@
+import 'package:flutter/material.dart';
+
+import 'calculator_page.dart';
+
+void main() {
+  runApp(FlutterIosCalculator());
+}
+
+class FlutterIosCalculator extends StatelessWidget {
+  const FlutterIosCalculator({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter iOS Calculator',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: const CalculatorPage(),
+    );
+  }
+}
